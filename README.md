@@ -64,7 +64,7 @@ This system replaces traditional email/phone support with a more efficient, trac
 | Technology | Purpose | Icon |
 |------------|---------|------|
 | Apache Tomcat | Web server | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg" width="20"/> |
-| Maven | Build tool | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20"/> |
+
 
 ## 🚀 Installation Guide
 
@@ -72,7 +72,6 @@ This system replaces traditional email/phone support with a more efficient, trac
 - Java JDK 11+
 - Apache Tomcat 9+
 - MySQL 8.0+
-- Maven 3.6+
 
 ### Setup Steps
 1. **Clone the repository**:
