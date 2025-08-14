@@ -52,7 +52,6 @@ This system replaces traditional email/phone support with a more efficient, trac
 |------------|---------|------|
 | Java | Core application logic | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20"/> |
 | Servlets/JSP | Web processing | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg" width="20"/> |
-| Spring Boot (if used) | Framework | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20"/> |
 
 ### Database
 | Technology | Purpose | Icon |
