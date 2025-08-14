@@ -1,0 +1,37 @@
+.home{
+    margin-top: 20px;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/new.jpg) no-repeat;
+    text-align: center;
+}
+.home .contend h3{
+    font-size: 47px;
+    color: rgb(245, 243, 241);
+    padding-top: 150px;
+    text-align: center;
+    align-items: center;
+}
+.home .contend p{
+    color: rgb(245, 244, 243);
+    text-align: center;
+    padding: 5px;
+
+}
+.btn{
+
+    display: inline-block;
+    margin-top: 100px;
+    border-radius: 20px;
+    background: #181c58;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover{
+    background: #792d39;
+}

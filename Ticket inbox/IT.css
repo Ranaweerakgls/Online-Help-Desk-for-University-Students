@@ -1,0 +1,243 @@
+.logo-details img{
+    width:60px;
+    height: 70px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{ 
+    min-height: 100vh;
+    width:100%;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width:240px;
+    
+    background: rgb(129, 78, 145);
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{
+    width:60px;
+}
+.sidebar .logo-details {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+}
+BoxIcons CDN link
+
+.sidebar .logo-details i{
+    font-size: 28px ;
+    font-weight: 500;
+    color: white;
+    min-width: 60px;
+    text-align: center;
+}
+
+.sidebar .logo-details .logo_name{
+    font-size: 24px;
+    font-weight:500;
+    color: rgb(241, 220, 220);
+}
+
+.sidebar .nav-links{
+    margin-top: 16px;
+}
+
+.sidebar .nav-links li{
+    height:50px ;
+    width:100%;
+    list-style: none;
+}
+
+.sidebar .nav-links li a{
+    height: 100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    text-decoration:none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a:hover{
+    background: rgb(175, 85, 170);
+}
+
+.sidebar .nav-links li a i{
+    /*background: red;*/
+    min-width: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar .nav-links li a .link_name{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+/*home section css */
+.home-section{
+    background: #f5f5f5 ;
+    position:relative ;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left:240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .active ~ .home-section{
+    width: calc(100% - 60px);
+    left:60px;
+}
+
+.home-section nav{
+    height: 80px;
+    background: white;
+    padding: 0  20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section nav .sidebar-button{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-section nav .sidebar-button .dashboard i{
+    font-size:35px ;
+    margin-right: 10px;
+}
+
+.home-section nav .search-box{
+    background:#EFEEF1;
+    height: 50px ;
+    width:550px;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav .search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius:6px ;
+    padding: 0 15px;
+    font-size:17px ;
+    color: white;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    outline: none;
+}
+
+nav .search-box  .bx-search{
+    position: absolute;
+    right: 5px;
+    top:50%;
+    transform:translateY(-50%);
+    height: 40px;
+    width:40px;
+    background: #9b38af;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.home-section nav .search-box .profile-details{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    min-height: 190px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img{
+    height: 40ppx;
+    width:40px;
+    object-fit: cover;
+    border-radius:6px ;
+}
+
+nav .profile-details .admin_name{
+    font-size: 15px ;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i{
+    color:#333 ;
+    font-size: 25px;
+}
+
+/* ***** tabular section ***** */
+.tabular--wrapper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.table-container {
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background : rgba(113, 99, 186, 255);
+    color:#fff;
+}
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color:#333;
+}
+tr:nth-child(even) {
+    background: #fff;
+}
+tfoot{
+    background:  rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td{
+    padding: 15px;
+}
+.table-container button {
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+

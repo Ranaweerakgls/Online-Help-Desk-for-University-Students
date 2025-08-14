@@ -1,0 +1,304 @@
+.logo-details img{
+    width:210px;
+    height: 90px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{ 
+    min-height: 100vh;
+    width:100%;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width:240px;
+    background: midnightblue;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{
+    width:60px;
+}
+
+.sidebar .logo-details {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar .logo-details i{
+    font-size: 28px ;
+    font-weight: 500;
+    color: white;
+    min-width: 60px;
+    text-align: center;
+}
+
+.sidebar .logo-details .logo_name{
+    font-size: 24px;
+    font-weight:500;
+    color: white;
+}
+
+.sidebar .nav-links{
+    margin-top: 16px;
+}
+
+.sidebar .nav-links li{
+    height:50px ;
+    width:100%;
+    list-style: none;
+}
+
+.sidebar .nav-links li a{
+    height: 100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    text-decoration:none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a:hover{
+    background: rgb(85, 85, 175);
+}
+
+.sidebar .nav-links li a i{
+    /*background: red;*/
+    min-width: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar .nav-links li a .link_name{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+/*home section css */
+.home-section{
+    background: #f5f5f5 ;
+    position:relative ;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left:240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .active ~ .home-section{
+    width: calc(100% - 60px);
+    left:60px;
+}
+
+.home-section nav{
+    height: 80px;
+    background: white;
+    padding: 0  20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section nav .sidebar-button{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-section nav .sidebar-button .dashboard i{
+    font-size:35px ;
+    margin-right: 10px;
+}
+
+.home-section nav .search-box{
+    background:#EFEEF1;
+    height: 50px ;
+    width:550px;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav .search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius:6px ;
+    padding: 0 15px;
+    font-size:17px ;
+    color: white;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    outline: none;
+}
+
+nav .search-box  .bx-search{
+    position: absolute;
+    right: 5px;
+    top:50%;
+    transform:translateY(-50%);
+    height: 40px;
+    width:40px;
+    background: #2697FF;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.home-section nav .search-box .profile-details{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    min-height: 190px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img{
+    height: 40ppx;
+    width:40px;
+    object-fit: cover;
+    border-radius:6px ;
+}
+
+nav .profile-details .admin_name{
+    font-size: 15px ;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i{
+    color:#333 ;
+    font-size: 25px;
+}
+
+/*Team Details */
+
+body{
+    background-color: rgb(26, 102, 133);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}s
+
+.column{
+    width: 100%;
+    padding:0.5em 0;
+}
+
+h1{
+    text-align: center;
+    width:100%;
+    font-size: 3.5em;
+    color: rgb(9, 9, 90);
+
+}
+
+.card{
+    box-shadow: 0 0 2.2em rgb(1, 1, 51);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: midnightblue;
+    cursor:pointer;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.card .img-content{
+    width:8em;
+    height: 8em;
+    background-color:midnightblue;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card img{
+    width:100%;
+    border-radius: 50%;
+}
+
+.card h3{
+    font-weight: 500;
+}
+
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover{
+    background: linear-gradient(#6045ea, #8567f7);
+    color: #ffffff;
+}
+
+.card:hover  .img-content{
+    transform: scale(1.15);
+
+}
+
+@media screen and (min-width:800px){
+    section{
+        padding:1em 7em;
+    }
+}
+    
+@media screen and (min-width:100px){
+    section{
+        padding:1em;
+    }
+}
+
+.card{
+    padding: 5em 1em;
+
+}
+
+.column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+}
+
+    
+
+

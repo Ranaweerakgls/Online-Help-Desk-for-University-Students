@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+  
+  background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Pictures/back.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.logo{
+    width: 180px;
+}
+.header .active:before{
+    content: '';
+    position: absolute;
+    height:60px;
+    width:2px;
+    left: 200px;
+    top: 15px;
+    background: linear-gradient(rgb(245, 242, 245),rgb(129, 129, 158));
+}
+
+.header ul li {
+                                   /* Float the links horizontally */
+    margin: 0 10px;                         /* Add margin between the links */
+    list-style :none;
+    display: inline-block;
+    padding: 8px 2px;
+  }
+
+.header {
+    position: fixed;                     /* Fix the header to the top of the page */
+    background-color: rgb(10, 17, 78);           /* Set the background color of the header */
+    padding: 0px;                            /* Add padding to the header */
+    min-width: 100%;                    /* Make the header take up the full width of the page */
+    z-index: 1;                         /* Ensure the header appears above other elements */
+    top: 0;                   /* Position the header at the top of the page */
+    box-shadow: 0px 10px 10px rgba(0, 0,0,0.2);
+    
+  }
+  
+  
+  /* Style the header links */
+  .header a {
+    color: rgb(250, 250, 250);                             /* Set the color of the links */
+    text-align: center;                        /* Center the text within the links */
+    padding: 20px 20px;                        /* Add padding to the links */
+    text-decoration:none;                     /* Remove the underline from the links */
+    font-size: 15px;                           /* Set the font size of the links */
+    line-height:10px;                             /* Set the line height of the links */
+    border-radius: 999px;                           /* Round the corners of the links */
+  }
+  /* Style the hover effect for the header links */
+.header a:hover {
+    background-color: #dddee634; /* Set the background color of the links on hover */
+    color: rgb(235, 229, 229); /* Set the color of the links on hover */
+  }
+  
+  /* Style the active link in the header */
+  .header a.active {
+    color: rgb(238, 231, 231); /* Set the color of the active link */
+  }
+
+  
+
+  .header-right {
+    float: right;                            /* Float the links verticaly */
+    border-right: 10px;                      /* Add margin between the links */
+    margin: 30px;
+  }
+
+ .footer {
+    background-color: rgb(224, 213, 213);
+    text-align: center;
+    justify-content: center;
+ }
+
+ .footer h3{
+  font-size: 28px;
+  margin: 15px;
+  color:rgba(10, 17, 78, 0.959);
+  text-align: center; 
+ }
+ .footer p{
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+
+ }
+ .footer .credit{
+    text-align: center;
+    font-size: 10px;
+    margin-top: auto;
+    background:  rgba(10, 17, 78, 0.959);
+    padding: 10px;
+    color: rgb(247, 244, 241);
+ }
+
+ 
+
+ /*support page flex box */
+
+ .our-services{
+  margin-top: 100px;
+ }
+
+ .our-services h1{
+  text-transform: uppercase;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 40px;
+  color:white;
+ }
+
+ .content{
+  width: 500px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+ }
+
+ .support{
+  text-align: center;
+  margin: 20px;
+  background-color: mediumslateblue;
+  padding: 30px  20px;
+  cursor: pointer;
+  border:1px solid #ddd;
+  transition: 0.5 ease;
+ }
+
+ .support:hover{
+  background-color:midnightblue;
+ }
+ 
+ .support i{
+  font-size: 48px;
+  color: rgb(10, 17, 78);
+
+ }
+
+ .support h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+ }
+
+ .support p{
+  font-size: 16px;
+  color: black;
+  line-height: 1.4;
+ } 
+
+ @media screen and (max-width:760px){
+      .content{
+
+        flex-direction: column;
+      }
+ }
+  
+ 
