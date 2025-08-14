@@ -1,7 +1,5 @@
 # 🎓 Online Help Desk for University Students
 
-![Project Banner](https://via.placeholder.com/800x200?text=University+Help+Desk+Screenshot) <!-- Replace with actual screenshot -->
-
 A comprehensive web-based support system designed to streamline technical assistance for university students.
 
 ## 📝 Description
